@@ -23,7 +23,7 @@ export default function profile(state = initialState, action) {
     case GET_PROFILES:
       return { ...state, profiles: action.payload, loading: false };
     case PROFILE_ERROR:
-      return { ...state, error: action.payload, loading: false };
+      return { ...state, error: action.payload, loading: false, profile: null };
     case CLEAR_PROFILE:
       return {
         ...state,
