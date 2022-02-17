@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 const Alert = ({ alerts }) => (
-  <div className="alert-wrappeer">
+  <div className="alert-wrapper">
     {alerts.map((alert) => (
       <div key={alert.id} className={`alert alert-${alert.alertType}`}>
         {alert.msg}
